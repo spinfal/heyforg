@@ -37,10 +37,6 @@ module.exports = class HeyForg extends Plugin {
     powercord.api.commands.unregisterCommand('heyforg');
   }
 
-  getRandomURL () {
-    return this.URLs[Math.floor(Math.random() * this.URLs.length)];
-  }
-
   heyforg () {
     document.querySelectorAll('[style*="background-image"]')
       .forEach(({ style }) => (
